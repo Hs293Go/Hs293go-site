@@ -1,0 +1,47 @@
+title: "Engineering Notes and Research"
+description: "Personal site, research, and technical notes from my PhD journey"
+url: "https://<your-username>.github.io"
+baseurl: ""
+
+remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+minimal_mistakes_skin: dark
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: null
+
+author:
+  name: "<Your Name>"
+  avatar: "/assets/images/avatar.jpg"
+  bio: "PhD in Robotics — Engineering, control, and autonomy."
+  location: "Canada"
+  github: <your-username>
+
+include:
+  - _pages
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      toc: true
+      toc_sticky: true
+      math: true
+      sidebar:
+        nav: "main"
+      classes: wide
+
+permalink: /:categories/:title/
